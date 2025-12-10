@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact - FKQ Medicals</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">FKQ <span>Medicals</span></div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">☰</div>
+            </nav>
+        </header>
+
+        <section id="booking" class="booking">
+            <h2>Book a Test</h2>
+        <form
+  action="https://formspree.io/f/xqadzywb"
+  class="fs-form"
+  target="_top"
+  method="POST"
+>
+  <div class="fs-field">
+    <label class="fs-label" for="name">Your Name</label>
+    <input class="fs-input" id="name" name="name" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email">Email</label>
+    <input class="fs-input" id="email" name="email" required />
+    <p class="fs-description">
+      This will help us respond via an email.
+    </p>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="phone">Phone Number</label>
+    <input type="tel" class="fs-input" id="phone" name="phone" required />
+  </div>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="test">Select Test</label>
+<select name="Test selected" id="test">
+  <option style="background-color: rgb(60, 60, 71);color: red;" value="blood-test">Blood Test</option>
+  <option style="background-color: rgb(71, 71, 87);color: red;"value="urine-test">Urine Test</option>
+  <option style="background-color: rgb(65, 65, 78);color: red;"value="Hepatitis B-test"> Hepatitis B Test</option>
+  <option style="background-color: rgb(67, 67, 80);color: red;"value="Vaccination">Vaccination</option>
+  <option style="background-color: rgb(73, 73, 87);color: red;"value="Kidney Function-test">Kidney Function Test</option>
+  <option style="background-color: rgb(62, 62, 77);color: red;"value="x-ray">X-Ray</option>
+</select>
+<label for="date">Preferred date</label>
+<input type="date" class="fs-input" id="date" name="Preferred date" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="message">Message</label>
+    <textarea
+      class="fs-textarea"
+      id="message"
+      name="message"
+      
+    ></textarea>
+    <p class="fs-description">What would you like to discuss?</p>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Submit</button>
+  </div>
+</form>
+                <!--
+  Copyright (c) 2025 Bhus Zibah
+  All rights reserved.
+  View only. Do not copy, modify, or distribute without permission.
+  Contact: [bhuszibah@gmail.com]
+-->
+             
+        </section>
+        <section class="content">
+            <h1>Contact Us</h1>
+            <p>Email: info@fkqmedicals.com</p>
+          
+            <p>Phone: +2348068671825</p>
+            <a
+                href="https://wa.me/2349014168870"
+                target="_blank"
+                style="text-decoration: none"
+            >
+                <button class="wa">💬 Chat on WhatsApp</button>
+            </a>
+            <p>
+                Address: Shop 6, Adjacent Olagbemiro house, End of Lion
+                junction, Ogbomoso. Oyo state.
+            </p>
+        </section>
+
+        <footer>
+            <p>
+                &copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights
+                reserved.
+            </p>
+        </footer>
+        <div id="toast"></div>
+    </body>
+</html>
