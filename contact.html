@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -6,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact - FKQ Medicals</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <script defer src="script.js"></script>
     </head>
-    <body>
+    <body class="contact-page">
         <header>
             <nav class="navbar">
                 <div class="logo">FKQ <span>Medicals</span></div>
@@ -22,74 +22,154 @@
             </nav>
         </header>
 
-        <section id="booking" class="booking">
-            <h2>Book a Test</h2>
-            <form id="bookingForm" action="https://formspree.io/f/xqadzywb" method="POST">
-                <div class="fs-field">
-                    <label class="fs-label" for="name">Your Name</label>
-                    <input class="fs-input" id="name" name="name" type="text" required />
-                </div>
-                <div class="fs-field">
-                    <label class="fs-label" for="email">Email</label>
-                    <input class="fs-input" id="email" name="email" type="email" required />
-                    <p class="fs-description">
-                        This will help us respond via an email.
-                    </p>
-                </div>
-                <div class="fs-field">
-                    <label class="fs-label" for="phone">Phone Number</label>
-                    <input type="tel" class="fs-input" id="phone" name="phone" required />
-                </div>
-                <div class="fs-field">
-                    <label class="fs-label" for="test">Select Test</label>
-                    <select class="fs-select" id="test" name="test" required>
-                        <option value="" disabled selected>Select a test</option>
-                        <option value="blood-test">Blood Test</option>
-                        <option value="urine-test">Urine Test</option>
-                        <option value="Hepatitis B-test">Hepatitis B Test</option>
-                        <option value="Vaccination">Vaccination</option>
-                        <option value="Kidney Function-test">Kidney Function Test</option>
-                        <option value="x-ray">X-Ray</option>
-                    </select>
-                </div>
-                <div class="fs-field">
-                    <label class="fs-label" for="date">Preferred Date</label>
-                    <input type="date" class="fs-input" id="date" name="date" required />
-                </div>
-                <div class="fs-field">
-                    <label class="fs-label" for="message">Message</label>
-                    <textarea class="fs-textarea" id="message" name="message"></textarea>
-                    <p class="fs-description">What would you like to discuss?</p>
-                </div>
-                <div class="fs-button-group">
-                    <button class="fs-button" type="submit">Submit</button>
-                </div>
-            </form>
-            <!--
-  Copyright (c) 2025 Bhus Zibah
-  All rights reserved.
-  View only. Do not copy, modify, or distribute without permission.
-  Contact: [bhuszibah@gmail.com]
--->
-        </section>
         <section class="content">
             <h1>Contact Us</h1>
-            <p>Email: info@fkqmedicals.com</p>
-            <p>Phone: +2348068671825</p>
-            <a href="https://wa.me/2349014168870" target="_blank" style="text-decoration: none">
-                <button class="wa">💬 Chat on WhatsApp</button>
-            </a>
-            <p>
-                Address: Shop 6, Adjacent Olagbemiro house, End of Lion
-                junction, Ogbomoso. Oyo state.
-            </p>
+            
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone Support</h3>
+                    <p>Call us for appointments, inquiries, or emergencies</p>
+                    <p style="font-size: 1.3rem; font-weight: bold; color: #004aad; margin-top: 1rem;">
+                        +234 806 867 1825
+                    </p>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Send us an email for non-urgent inquiries or documentation</p>
+                    <p style="font-size: 1.1rem; color: #004aad; margin-top: 1rem;">
+                        info@fkqmedicals.com
+                    </p>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-clock"></i>
+                    <h3>Working Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                    <p>Saturday: 9:00 AM - 5:00 PM</p>
+                    <p>Sunday: 10:00 AM - 3:00 PM</p>
+                </div>
+            </div>
+            
+            <!-- Booking Form -->
+            <div class="contact-form-container">
+                <h2>Book a Test Appointment</h2>
+                <form id="bookingForm" action="https://formspree.io/f/xqadzywb" method="POST">
+                    <input type="hidden" name="_subject" value="New Test Booking Request - FKQ Medicals">
+                    <input type="hidden" name="_replyto" value="%email%">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <div class="error-message">Please enter your full name</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            <div class="error-message">Please enter a valid phone number</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <div class="error-message">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="test">Test Type</label>
+                            <select id="test" name="test" required>
+                                <option value="" disabled selected>Select a test</option>
+                                <option value="blood-test">Blood Test</option>
+                                <option value="urine-test">Urine Test</option>
+                                <option value="hepatitis-b-test">Hepatitis B Test</option>
+                                <option value="vaccination">Vaccination</option>
+                                <option value="kidney-function-test">Kidney Function Test</option>
+                                <option value="x-ray">X-Ray</option>
+                                <option value="full-body-checkup">Full Body Checkup</option>
+                                <option value="covid-test">COVID-19 Test</option>
+                                <option value="other">Other Test</option>
+                            </select>
+                            <div class="error-message">Please select a test type</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                            <div class="error-message">Please select a date</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="optional">Additional Information</label>
+                        <textarea id="message" name="message" placeholder="Any special requirements, questions, or additional information..."></textarea>
+                    </div>
+                    
+                    <div class="submit-btn-container">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-calendar-check"></i> Book Appointment
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- WhatsApp Contact -->
+            <div class="whatsapp-container">
+                <h3 style="color: #004aad; margin-bottom: 1rem;">Quick Chat on WhatsApp</h3>
+                <p style="color: #666; margin-bottom: 1.5rem;">Get instant responses to your queries</p>
+                <a href="https://wa.me/2349014168870" target="_blank" class="whatsapp-link">
+                    <button class="wa">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </button>
+                </a>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email:</strong> info@fkqmedicals.com
+                </p>
+                
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <strong>Phone:</strong> +234 806 867 1825
+                </p>
+                
+                <p class="address">
+                    <strong>Our Location:</strong>
+                    Shop 6, Adjacent Olagbemiro house,<br>
+                    End of Lion junction, Ogbomoso,<br>
+                    Oyo State, Nigeria.
+                </p>
+            </div>
+            
+            <!-- Hours of Operation -->
+            <div class="hours">
+                <h3><i class="fas fa-clock"></i> Working Hours</h3>
+                <p><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</p>
+                <p><strong>Saturday:</strong> 9:00 AM - 5:00 PM</p>
+                <p><strong>Sunday:</strong> 10:00 AM - 3:00 PM</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #ffd700;">
+                    <i class="fas fa-exclamation-circle"></i> Emergency services available 24/7
+                </p>
+            </div>
+            
+            <!-- Map Placeholder -->
+            <div class="map-placeholder">
+                <i class="fas fa-map-marker-alt"></i>
+                <span style="margin-left: 1rem; color: #666; font-size: 1.1rem;">Location Map</span>
+            </div>
         </section>
 
         <footer>
-            <p>
-                &copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights
-                reserved.
-            </p>
+            <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
         </footer>
         <div id="toast"></div>
     </body>

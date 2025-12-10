@@ -3,302 +3,211 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Our Services - FKQ Medicals</title>
+        <title>Services - FKQ Medicals</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <script defer src="script.js"></script>
+        <style>
+            /* Additional inline styles for services page */
+            .services-intro {
+                text-align: center;
+                padding: 2rem;
+                background: #f8f9fa;
+                border-radius: 10px;
+                margin: 2rem auto;
+                max-width: 1000px;
+            }
+            
+            .services-intro p {
+                font-size: 1.2rem;
+                color: #555;
+                line-height: 1.8;
+            }
+        </style>
     </head>
     <body>
         <header>
             <nav class="navbar">
-                <div class="logo">
-                    <i class="fas fa-stethoscope"></i>
-                    FKQ <span>Medicals</span>
-                </div>
+                <div class="logo">FKQ <span>Medicals</span></div>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="services.html" class="active"><i class="fas fa-flask"></i> Services</a></li>
-                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
-                    <li><a href="contact.html" class="nav-btn">Book Now</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <div class="menu-toggle" id="menuToggle">☰</div>
             </nav>
         </header>
 
-        <section class="page-hero">
-            <div class="page-hero-content">
-                <h1>Our Diagnostic Services</h1>
-                <p>Comprehensive medical testing for accurate diagnosis and better health outcomes</p>
-            </div>
+        <!-- Hero Section for Services -->
+        <section class="services-hero">
+            <h1>Our Comprehensive Medical Services</h1>
+            <p>Advanced diagnostics, precise testing, and compassionate care for all your healthcare needs</p>
         </section>
 
-        <section class="services-categories">
-            <div class="section-header">
-                <h2>Comprehensive Diagnostic Solutions</h2>
-                <p>We offer a wide range of specialized tests using advanced technology</p>
+        <section class="services-page">
+            <div class="services-intro">
+                <p>At FKQ Medicals, we offer a wide range of diagnostic and medical services using state-of-the-art equipment and expert medical professionals. Our commitment is to provide accurate, timely, and reliable results for optimal patient care.</p>
             </div>
 
-            <div class="category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-tint"></i>
+            <div class="services-container">
+                <div class="services-grid">
+                    
+                    <!-- Category: Diagnostic Tests -->
+                    <div class="service-category">
+                        <h2><i class="fas fa-microscope service-icon"></i> Diagnostic & Laboratory Tests</h2>
                     </div>
-                    <h3>Hematology Tests</h3>
-                </div>
-                <div class="services-list">
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Full Blood Count (CBC)</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-tint"></i> Haematological Tests</h3>
+                        <ul>
+                            <li>Full Blood Count (FBC)</li>
+                            <li>Packed Cell Volume (PCV)</li>
+                            <li>Hemoglobin (Hb) Level</li>
+                            <li>White Blood Cell Count & Differential</li>
+                            <li>Platelet Count</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Hemoglobin (Hb) Estimation</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-flask"></i> Clinical/Chemical Pathology</h3>
+                        <ul>
+                            <li>Glucose Tests (FBS, RBS, OGTT)</li>
+                            <li>Comprehensive Urinalysis</li>
+                            <li>Liver Function Tests (LFT)</li>
+                            <li>Kidney Function Tests (KFT)</li>
+                            <li>Electrolytes, Urea & Creatinine (E/U/Cr)</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Packed Cell Volume (PCV)</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-dna"></i> Hormonal Assays</h3>
+                        <ul>
+                            <li>LH & FSH Hormone Tests</li>
+                            <li>Thyroid Function Screening</li>
+                            <li>Reproductive Hormone Panels</li>
+                            <li>Adrenal Function Tests</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>White Blood Cell Count & Differential</span>
+                    
+                    <div class="service-card">
+                        <span class="featured-badge">Popular</span>
+                        <h3><i class="fas fa-bacteria"></i> Microbiology & Parasitology</h3>
+                        <ul>
+                            <li>Urine Microscopy, Culture & Sensitivity</li>
+                            <li>Stool Analysis & Culture</li>
+                            <li>Blood Culture & Sensitivity</li>
+                            <li>High Vaginal Swab (HVS) m/c/s</li>
+                            <li>Urethral Swab Analysis</li>
+                            <li>Stool Routine Examination</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Platelet Count</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-microscope"></i> Histopathology & Cytology</h3>
+                        <ul>
+                            <li>Pap Smear Tests</li>
+                            <li>Endocervical Screening</li>
+                            <li>Tissue Processing & Biopsy</li>
+                            <li>Fine Needle Aspiration Cytology</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>ESR & Blood Grouping</span>
+                    
+                    <!-- Category: Specialized Services -->
+                    <div class="service-category">
+                        <h2><i class="fas fa-star service-icon"></i> Specialized & Screening Services</h2>
                     </div>
-                </div>
-            </div>
-
-            <div class="category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-flask"></i>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-user-shield"></i> Health Screenings</h3>
+                        <ul>
+                            <li>Drug Abuse Testing</li>
+                            <li>Premarital Screening Packages</li>
+                            <li>Basic & Comprehensive Health Checkups</li>
+                            <li>Infertility Screening & Fertility Evaluation</li>
+                        </ul>
                     </div>
-                    <h3>Clinical Chemistry</h3>
-                </div>
-                <div class="services-list">
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Liver Function Tests (LFT)</span>
+                    
+                    <div class="service-card">
+                        <span class="featured-badge">Featured</span>
+                        <h3><i class="fas fa-virus"></i> Infectious Disease Testing</h3>
+                        <ul>
+                            <li>COVID-19 Screening & Certificates</li>
+                            <li>Hepatitis B & C (Profile & Viral Load)</li>
+                            <li>HIV Screening & Confirmatory Tests</li>
+                            <li>Food Handlers Medical Test</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Kidney Function Tests (KFT/RFT)</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-briefcase-medical"></i> Employment & Pre-employment</h3>
+                        <ul>
+                            <li>Pre-employment Medical Screening</li>
+                            <li>Local & International Employment Tests</li>
+                            <li>Annual Corporate Health Checks</li>
+                            <li>Fitness for Work Certificates</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Electrolytes, Urea & Creatinine (E/U/Cr)</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-procedures"></i> Imaging & Scans</h3>
+                        <ul>
+                            <li>Pelvic Ultrasound Scan</li>
+                            <li>Abdominal Ultrasound</li>
+                            <li>Prostate Specific Antigen (PSA)</li>
+                            <li>X-Ray Services</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Glucose Tests (FBS, PPBS, OGTT)</span>
+                    
+                    <!-- Category: Additional Services -->
+                    <div class="service-category">
+                        <h2><i class="fas fa-plus-circle service-icon"></i> Additional Services</h2>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Lipid Profile</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-search"></i> Research & Academic Support</h3>
+                        <p>Comprehensive research assistance for academic projects, thesis, and scientific research at local and international levels.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Urinalysis & Stool Routine</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-shield-virus"></i> Immunology Services</h3>
+                        <ul>
+                            <li>Immunochemistry Tests</li>
+                            <li>Immunohistology Services</li>
+                            <li>Autoimmune Disease Screening</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-
-            <div class="category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-dna"></i>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-syringe"></i> Vaccination Services</h3>
+                        <p>Complete vaccination services including travel vaccines, routine immunizations, and specialized vaccine administration.</p>
                     </div>
-                    <h3>Hormonal & Special Tests</h3>
-                </div>
-                <div class="services-list">
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Thyroid Function Tests (T3, T4, TSH)</span>
+                    
+                    <div class="service-card">
+                        <h3><i class="fas fa-users"></i> Public Health Initiatives</h3>
+                        <ul>
+                            <li>Health Awareness Programs</li>
+                            <li>Community Sensitization Campaigns</li>
+                            <li>Epidemic Outbreak Response Participation</li>
+                            <li>Public Health Education</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>LH, FSH & Reproductive Hormones</span>
+                    
+                    <!-- Call to Action Card -->
+                    <div class="service-card" style="grid-column: 1 / -1; background: linear-gradient(135deg, #004aad, #00307a); color: white; text-align: center;">
+                        <h3 style="color: #ffd700;"><i class="fas fa-calendar-check"></i> Ready to Book a Test?</h3>
+                        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Contact us today to schedule your appointment or learn more about our services.</p>
+                        <a href="contact.html" class="btn" style="background: #ffd700; color: #004aad; padding: 0.8rem 2rem; font-weight: bold; text-decoration: none; border-radius: 5px; display: inline-block;">
+                            <i class="fas fa-phone-alt"></i> Contact Us Now
+                        </a>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Infertility Screening & Fertility Upgrade</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Premarital Screening Packages</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Drug Abuse Testing</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Food Handlers Test</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-virus"></i>
-                    </div>
-                    <h3>Microbiology & Serology</h3>
-                </div>
-                <div class="services-list">
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Culture & Sensitivity Tests (Urine, Blood, Stool)</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Hepatitis B & C Screening (Profile & Viral Load)</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>HIV Screening & Confirmatory Tests</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>COVID-19 RT-PCR & Rapid Tests</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>HVS & Urethral Swab Tests</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Immunochemistry Tests</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-procedures"></i>
-                    </div>
-                    <h3>Advanced Diagnostics & Screening</h3>
-                </div>
-                <div class="services-list">
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Ultrasound Scans (Pelvic, Abdominal, Prostate)</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Cytology & Histopathology (Pap Smear, Tissue Processing)</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Pre-employment & Corporate Health Screening</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Basic & Comprehensive Health Packages</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>International Travel Health Certificates</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Vaccination Services</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Academic & Research Support</h3>
-                </div>
-                <div class="services-list">
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Research Support for Projects & Theses</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Academic Collaboration for Students</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Laboratory Training & Internships</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Epidemic & Outbreak Response Support</span>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Health Awareness Programs</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="booking-cta">
-            <div class="booking-content">
-                <h2>Ready to Book Your Test?</h2>
-                <p>Schedule an appointment or get a free consultation about our services</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">
-                        <i class="fas fa-calendar-alt"></i> Book Appointment
-                    </a>
-                    <a href="tel:+2348068671825" class="btn btn-outline">
-                        <i class="fas fa-phone"></i> Call for Inquiry
-                    </a>
+                    
                 </div>
             </div>
         </section>
 
         <footer>
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-stethoscope"></i>
-                        FKQ <span>Medicals</span>
-                    </div>
-                    <p>Precision diagnostics with compassionate care since 2020.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, Ogbomoso</p>
-                    <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
-                    <p><i class="fas fa-envelope"></i> fkqmedicals@google.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
-                <p class="copyright-note">
-                    <!--
-                    Copyright (c) 2025 Bhus Zibah
-                    All rights reserved.
-                    View only. Do not copy, modify, or distribute without permission.
-                    Contact: [bhuszibah@gmail.com]
-                    -->
-                </p>
-            </div>
+            <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
         </footer>
         <div id="toast"></div>
     </body>
