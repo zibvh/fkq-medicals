@@ -3,102 +3,214 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FKQ Medicals</title>
+        <title>FKQ Medicals - Precision Diagnostics</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <script defer src="script.js"></script>
     </head>
     <body>
         <header>
             <nav class="navbar">
-                <div class="logo">FKQ <span>Medicals</span></div>
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    FKQ <span>Medicals</span>
+                </div>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-flask"></i> Services</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="contact.html" class="nav-btn">Book Now</a></li>
                 </ul>
-                <div class="menu-toggle" id="menuToggle">☰</div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </nav>
         </header>
 
         <section class="hero">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Welcome to FKQ Medical Laboratory</h1>
-                <p>
-                    Your health is our priority – Trusted care, accurate
-                    results.
-                </p>
-                <a href="services.html" class="btn">View Services</a>
-                <a href="contact.html">Book a Test</a>
+                <h1 class="hero-title">Precision Diagnostics, Compassionate Care</h1>
+                <p class="hero-subtitle">Advanced medical testing with accuracy you can trust. Your health is our priority.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary">
+                        <i class="fas fa-flask"></i> View Our Services
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>99%</h3>
+                    <p>Accuracy Rate</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Emergency Support</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Diagnostic Tests</p>
+                </div>
+                <div class="stat">
+                    <h3>5+</h3>
+                    <p>Years Experience</p>
+                </div>
             </div>
         </section>
-        <!--
-  Copyright (c) 2025 Bhus Zibah
-  All rights reserved.
-  View only. Do not copy, modify, or distribute without permission.
-  Contact: [bhuszibah@gmail.com]
--->
 
         <section class="features">
-            <div class="feature">
-                <h2>Accurate Testing</h2>
-                <p>
-                    We use modern equipment to ensure reliable and accurate
-                    medical results.
-                </p>
+            <div class="section-header">
+                <h2>Why Choose FKQ Medicals</h2>
+                <p>Excellence in medical diagnostics and patient care</p>
             </div>
-            <div class="feature">
-                <h2>Expert Team</h2>
-                <p>
-                    Our medical professionals are certified and experienced in
-                    their fields.
-                </p>
-            </div>
-            <div class="feature">
-                <h2>24/7 Support</h2>
-                <p>
-                    Contact us anytime for urgent medical consultations and
-                    bookings.
-                </p>
-            </div>
-        </section>
-        <section class="text">
-            <p>
-                From basic health checks to advanced diagnostics, FKQ Medicals
-                offers a wide range of services designed to meet your needs
-            </p>
-            <div class="tests">
-                <ul>
-                    <li>
-                        Home Sample Collection – Comfort and convenience at your
-                        doorstep
-                    </li>
-                    <li>Medical Consultation – Get expert medical advice</li>
-                    <li>
-                        Health Screening Packages – Tailored to individuals &
-                        companies
-                    </li>
-                    <li>COVID-19 Testing – Safe and reliable</li>
-                    <li>Blood Tests – Accurate and fast results</li>
-                </ul>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Advanced Technology</h3>
+                    <p>State-of-the-art equipment for precise and reliable test results.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Certified medical professionals with years of diagnostic experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Quick Results</h3>
+                    <p>Fast turnaround times with digital reports available online.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Collection</h3>
+                    <p>Convenient sample collection at your doorstep.</p>
+                </div>
             </div>
         </section>
 
-        <section class="whychooseus">
-            <h5>Why Patients Trust FKQ Medicals</h5>
-            <ol>
-                <li style="width: fit-content;">Modern diagnostic equipment</li>
-                <li  style="width: fit-content;">Experienced medical professionals</li>
-                <li  style="width: fit-content;">Clean, comfortable facilities</li>
-                <li  style="width: fit-content;">Fast turnaround time</li>
-            </ol>
+        <section class="services-preview">
+            <div class="section-header">
+                <h2>Our Key Services</h2>
+                <p>Comprehensive diagnostic solutions for all your health needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Blood Tests</h3>
+                    <p>Complete hematological analysis including CBC, Hb, PCV, and more.</p>
+                    <a href="services.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Hormonal Tests</h3>
+                    <p>LH, FSH, Thyroid screening, and comprehensive hormonal assays.</p>
+                    <a href="services.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>COVID-19 Testing</h3>
+                    <p>RT-PCR, Rapid Antigen tests with official certificates.</p>
+                    <a href="services.html">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3>Health Screenings</h3>
+                    <p>Comprehensive packages for individuals and corporate clients.</p>
+                    <a href="services.html">Learn More →</a>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="services.html" class="btn btn-outline">
+                    View All Services <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Need Emergency Testing?</h2>
+                <p>We provide 24/7 emergency diagnostic services. Contact us immediately for urgent cases.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+2348068671825" class="btn btn-white">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/2349014168870" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
         </section>
 
         <footer>
-            <p>
-                &copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights
-                reserved.
-            </p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-stethoscope"></i>
+                        FKQ <span>Medicals</span>
+                    </div>
+                    <p>Precision diagnostics with compassionate care since 2020.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/2349014168870" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Blood Tests</a></li>
+                        <li><a href="services.html">COVID-19 Testing</a></li>
+                        <li><a href="services.html">Health Screenings</a></li>
+                        <li><a href="services.html">Vaccination</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, End of Lion junction, Ogbomoso</p>
+                    <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
+                    <p><i class="fas fa-envelope"></i> fkqmedicals@google.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
+                <p class="copyright-note">
+                    <!--
+                    Copyright (c) 2025 Bhus Zibah
+                    All rights reserved.
+                    View only. Do not copy, modify, or distribute without permission.
+                    Contact: [bhuszibah@gmail.com]
+                    -->
+                </p>
+            </div>
         </footer>
         <div id="toast"></div>
     </body>

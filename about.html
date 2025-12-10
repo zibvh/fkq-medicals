@@ -3,99 +3,247 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About - FKQ Medicals</title>
+        <title>About Us - FKQ Medicals</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <script defer src="script.js"></script>
     </head>
     <body>
         <header>
             <nav class="navbar">
-                <div class="logo">FKQ <span>Medicals</span></div>
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    FKQ <span>Medicals</span>
+                </div>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-flask"></i> Services</a></li>
+                    <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="contact.html" class="nav-btn">Book Now</a></li>
                 </ul>
-                <div class="menu-toggle" id="menuToggle">☰</div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </nav>
         </header>
-<!--
-  Copyright (c) 2025 Bhus Zibah
-  All rights reserved.
-  View only. Do not copy, modify, or distribute without permission.
-  Contact: [bhuszibah@gmail.com]
--->
-        <section class="content">
-            <div class="about-hero">
-                <h1>FKQ MEDICAL DIAGNOSTIC HUB LIMITED</h1>
-                <p>
-                    Shop 6, Adjacent Olagbemiro house, End of Lion junction,
-                    Ogbomoso. Oyo state.
-                </p>
-            </div>
-            <h2>About Us</h2>
-            <p>Welcome to FKQ Medical Diagnostic Hub Limited</p>
-            <div class="explaination">
-                <h5>Trusted Diagnostic Excellence</h5>
-                <p>
-                    FKQ Medical Diagnostic Hub Limited is a state-of-the-art
-                    medical diagnostic center dedicated to providing accurate,
-                    timely, and compassionate diagnostic services. Our mission
-                    is to deliver exceptional patient care, support medical
-                    practitioners with reliable results, and contribute to the
-                    wellbeing of our community
-                </p>
-            </div>
-            <!-- In the "Our Vision" section -->
-            <h5>Our Vision</h5>
-            <ul class="vision-list">
-                <li>To become the preferred diagnostic hub in the region</li>
-                <li>
-                    To foster a culture of innovation, quality, and
-                    patient-centered care
-                </li>
-                <li>
-                    To expand our services, embracing cutting-edge technologies
-                    and medical advancements
-                </li>
-            </ul>
 
-            <!-- In the "Our Values" section -->
-            <h5>Our Values</h5>
-            <ul class="values-list">
-                <li>Patient satisfaction and safety above all</li>
-                <li>Continuous learning, improvement, and innovation</li>
-                <li>
-                    Collaboration with healthcare providers for optimal patient
-                    outcomes
-                </li>
-                <li>Accuracy, reliability, and timely delivery of results</li>
-            </ul>
-            <h5>History</h5>
-            <p>
-                FKQ Medical Diagnostic Hub Limited was founded in [Year] by
-                [Founder's Name], driven by a passion for enhancing diagnostic
-                services and patient care in our community
-            </p>
-            <h5>Facilities & Equipment</h5>
-            <p>
-                Our diagnostic hub features modern facilities, equipped with
-                advanced technologies, including [list equipment/types of tests
-                offered].
-            </p>
-            <p class="ending">
-                FKQ Medicals is dedicated to providing the highest standard of
-                healthcare services. We combine modern technology with
-                compassionate care.
-            </p>
+        <section class="page-hero about-hero">
+            <div class="page-hero-content">
+                <h1>About FKQ Medicals</h1>
+                <p>Trusted medical diagnostics with a commitment to excellence and patient care</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="about-intro">
+                <h2>Welcome to FKQ Medical Diagnostic Hub Limited</h2>
+                <p class="highlight-text">
+                    A state-of-the-art medical diagnostic center dedicated to providing accurate, timely, and compassionate diagnostic services. Our mission is to deliver exceptional patient care, support medical practitioners with reliable results, and contribute to the wellbeing of our community.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become the leading diagnostic hub in Nigeria, known for innovation, quality, and patient-centered care.</p>
+                    <ul class="vision-list">
+                        <li><i class="fas fa-check"></i> Preferred diagnostic partner in the region</li>
+                        <li><i class="fas fa-check"></i> Culture of innovation and excellence</li>
+                        <li><i class="fas fa-check"></i> Cutting-edge medical advancements</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To provide accurate, reliable, and timely diagnostic services that improve healthcare outcomes.</p>
+                    <ul class="mission-list">
+                        <li><i class="fas fa-check"></i> Patient safety and satisfaction first</li>
+                        <li><i class="fas fa-check"></i> Continuous improvement and learning</li>
+                        <li><i class="fas fa-check"></i> Collaboration with healthcare providers</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Core principles that guide our operations and patient interactions.</p>
+                    <ul class="values-list">
+                        <li><i class="fas fa-star"></i> <strong>Integrity:</strong> Honest and ethical practices</li>
+                        <li><i class="fas fa-star"></i> <strong>Excellence:</strong> Highest quality standards</li>
+                        <li><i class="fas fa-star"></i> <strong>Compassion:</strong> Empathetic patient care</li>
+                        <li><i class="fas fa-star"></i> <strong>Innovation:</strong> Adopting new technologies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h2>Our History</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h4>Foundation</h4>
+                            <p>FKQ Medical Diagnostic Hub was founded with a vision to provide quality diagnostic services in Ogbomoso and surrounding regions.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-content">
+                            <h4>Expansion</h4>
+                            <p>Added advanced hematology and biochemistry analyzers, expanding our test menu to over 50 different parameters.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-content">
+                            <h4>COVID-19 Response</h4>
+                            <p>Designated as a COVID-19 testing center, serving the community during the pandemic with rapid testing and vaccination.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-content">
+                            <h4>Modernization</h4>
+                            <p>Complete digital transformation with online reporting, appointment booking, and teleconsultation services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facilities-section">
+                <h2>Our Facilities & Equipment</h2>
+                <p>We invest in the latest medical technology to ensure accurate results:</p>
+                <div class="equipment-grid">
+                    <div class="equipment-item">
+                        <i class="fas fa-microscope"></i>
+                        <span>Automated Hematology Analyzers</span>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-flask"></i>
+                        <span>Chemistry Analyzers</span>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-vial"></i>
+                        <span>ELISA Readers</span>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-wave-square"></i>
+                        <span>Ultrasound Machines</span>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-dna"></i>
+                        <span>PCR Equipment</span>
+                    </div>
+                    <div class="equipment-item">
+                        <i class="fas fa-temperature-high"></i>
+                        <span>Incubators & Centrifuges</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h2>Our Expert Team</h2>
+                <p>Certified professionals dedicated to your health</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Dr. [Name]</h4>
+                        <p>Medical Director</p>
+                        <span>MBBS, FMCPath</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <h4>Chief [Name]</h4>
+                        <p>Head Laboratory Scientist</p>
+                        <span>BMLS, AMLSCN</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4>[Name]</h4>
+                        <p>Laboratory Technologist</p>
+                        <span>B.Sc Microbiology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conclusion-section">
+                <div class="conclusion-content">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Our Commitment</h3>
+                    <p>
+                        FKQ Medicals is dedicated to providing the highest standard of healthcare services. 
+                        We combine modern technology with compassionate care, ensuring every patient receives 
+                        accurate diagnostics and personalized attention. Your health and trust are our greatest priorities.
+                    </p>
+                    <div class="signature">
+                        <strong>FKQ Medical Diagnostic Hub Limited</strong>
+                        <span>Precision Diagnostics, Compassionate Care</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Partner With Us</h2>
+                <p>We collaborate with hospitals, clinics, and corporate organizations for comprehensive health solutions.</p>
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-handshake"></i> Become a Partner
+                </a>
+            </div>
         </section>
 
         <footer>
-            <p>
-                &copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights
-                reserved.
-            </p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-stethoscope"></i>
+                        FKQ <span>Medicals</span>
+                    </div>
+                    <p>Precision diagnostics with compassionate care since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, Ogbomoso</p>
+                    <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
+                    <p><i class="fas fa-envelope"></i> fkqmedicals@google.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
+                <p class="copyright-note">
+                    <!--
+                    Copyright (c) 2025 Bhus Zibah
+                    All rights reserved.
+                    View only. Do not copy, modify, or distribute without permission.
+                    Contact: [bhuszibah@gmail.com]
+                    -->
+                </p>
+            </div>
         </footer>
         <div id="toast"></div>
     </body>

@@ -5,104 +5,256 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact - FKQ Medicals</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <script defer src="script.js"></script>
     </head>
     <body>
         <header>
             <nav class="navbar">
-                <div class="logo">FKQ <span>Medicals</span></div>
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    FKQ <span>Medicals</span>
+                </div>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-flask"></i> Services</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="contact.html" class="nav-btn">Book Now</a></li>
                 </ul>
-                <div class="menu-toggle" id="menuToggle">☰</div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </nav>
         </header>
 
-        <section id="booking" class="booking">
-            <h2>Book a Test</h2>
-        <form
-  action="https://formspree.io/f/xqadzywb"
-  class="fs-form"
-  target="_top"
-  method="POST"
->
-  <div class="fs-field">
-    <label class="fs-label" for="name">Your Name</label>
-    <input class="fs-input" id="name" name="name" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="email">Email</label>
-    <input class="fs-input" id="email" name="email" required />
-    <p class="fs-description">
-      This will help us respond via an email.
-    </p>
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="phone">Phone Number</label>
-    <input type="tel" class="fs-input" id="phone" name="phone" required />
-  </div>
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="test">Select Test</label>
-<select name="Test selected" id="test">
-  <option style="background-color: rgb(60, 60, 71);color: red;" value="blood-test">Blood Test</option>
-  <option style="background-color: rgb(71, 71, 87);color: red;"value="urine-test">Urine Test</option>
-  <option style="background-color: rgb(65, 65, 78);color: red;"value="Hepatitis B-test"> Hepatitis B Test</option>
-  <option style="background-color: rgb(67, 67, 80);color: red;"value="Vaccination">Vaccination</option>
-  <option style="background-color: rgb(73, 73, 87);color: red;"value="Kidney Function-test">Kidney Function Test</option>
-  <option style="background-color: rgb(62, 62, 77);color: red;"value="x-ray">X-Ray</option>
-</select>
-<label for="date">Preferred date</label>
-<input type="date" class="fs-input" id="date" name="Preferred date" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="message">Message</label>
-    <textarea
-      class="fs-textarea"
-      id="message"
-      name="message"
-      
-    ></textarea>
-    <p class="fs-description">What would you like to discuss?</p>
-  </div>
-  <div class="fs-button-group">
-    <button class="fs-button" type="submit">Submit</button>
-  </div>
-</form>
-                <!--
-  Copyright (c) 2025 Bhus Zibah
-  All rights reserved.
-  View only. Do not copy, modify, or distribute without permission.
-  Contact: [bhuszibah@gmail.com]
--->
-             
+        <section class="page-hero contact-hero">
+            <div class="page-hero-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch for appointments, inquiries, or emergency services</p>
+            </div>
         </section>
-        <section class="content">
-            <h1>Contact Us</h1>
-            <p>Email: info@fkqmedicals.com</p>
-          
-            <p>Phone: +2348068671825</p>
-            <a
-                href="https://wa.me/2349014168870"
-                target="_blank"
-                style="text-decoration: none"
-            >
-                <button class="wa">💬 Chat on WhatsApp</button>
-            </a>
-            <p>
-                Address: Shop 6, Adjacent Olagbemiro house, End of Lion
-                junction, Ogbomoso. Oyo state.
-            </p>
+
+        <section class="contact-content">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p class="contact-intro">We're here to help with all your diagnostic needs. Reach out through any channel below.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>Shop 6, Adjacent Olagbemiro house,<br>End of Lion junction, Ogbomoso.<br>Oyo State, Nigeria.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone Numbers</h4>
+                                <p>+234 806 867 1825<br>+234 901 416 8870</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>fkqmedicals@google.com<br>support@fkqmedicals.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 8:00 PM<br>Saturday: 9:00 AM - 6:00 PM<br>Sunday: 10:00 AM - 4:00 PM<br>Emergency: 24/7 Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-channels">
+                        <h3>Quick Connect</h3>
+                        <div class="channel-buttons">
+                            <a href="tel:+2348068671825" class="channel-btn phone">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/2349014168870" target="_blank" class="channel-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="mailto:fkqmedicals@google.com" class="channel-btn email">
+                                <i class="fas fa-envelope"></i> Email Us
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h2>Book an Appointment</h2>
+                    <p>Fill the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form id="bookingForm" class="booking-form" action="https://formspree.io/f/xqadzywb" method="POST">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+234 800 000 0000">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="test"><i class="fas fa-flask"></i> Select Test/Service *</label>
+                            <select id="test" name="test" required>
+                                <option value="" disabled selected>Choose a test or service</option>
+                                <option value="blood-test">Blood Tests (CBC, Hb, etc.)</option>
+                                <option value="urine-test">Urine Analysis</option>
+                                <option value="liver-test">Liver Function Test</option>
+                                <option value="kidney-test">Kidney Function Test</option>
+                                <option value="covid-test">COVID-19 Testing</option>
+                                <option value="hormonal-test">Hormonal Assay</option>
+                                <option value="scan">Ultrasound Scan</option>
+                                <option value="vaccination">Vaccination</option>
+                                <option value="screening">Health Screening Package</option>
+                                <option value="other">Other (Specify in message)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date"><i class="fas fa-calendar-alt"></i> Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time"><i class="fas fa-clock"></i> Preferred Time</label>
+                                <select id="time" name="time">
+                                    <option value="morning">Morning (8 AM - 12 PM)</option>
+                                    <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                                    <option value="evening">Evening (4 PM - 8 PM)</option>
+                                    <option value="anytime">Anytime</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Additional Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions..."></textarea>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="emergency" name="emergency">
+                            <label for="emergency">This is an emergency/urgent case</label>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="homecollection" name="homecollection">
+                            <label for="homecollection">Request home sample collection (additional charges may apply)</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> Submit Booking Request
+                        </button>
+                        
+                        <p class="form-note">We'll confirm your appointment via phone or email within 24 hours.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Find Our Location</h2>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>FKQ Medical Diagnostic Hub</h3>
+                    <p>Shop 6, Adjacent Olagbemiro house, End of Lion junction, Ogbomoso, Oyo State</p>
+                    <a href="https://maps.google.com/?q=Shop+6+Adjacent+Olagbemiro+house+End+of+Lion+junction+Ogbomoso" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency-section">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-ambulance"></i>
+                </div>
+                <div class="emergency-text">
+                    <h2>Emergency Services Available 24/7</h2>
+                    <p>For urgent medical testing and emergency consultations, call our emergency line immediately.</p>
+                </div>
+                <div class="emergency-action">
+                    <a href="tel:+2348068671825" class="btn btn-emergency">
+                        <i class="fas fa-phone"></i> EMERGENCY CALL: +234 806 867 1825
+                    </a>
+                </div>
+            </div>
         </section>
 
         <footer>
-            <p>
-                &copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights
-                reserved.
-            </p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-stethoscope"></i>
+                        FKQ <span>Medicals</span>
+                    </div>
+                    <p>Precision diagnostics with compassionate care since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, Ogbomoso</p>
+                    <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
+                    <p><i class="fas fa-envelope"></i> fkqmedicals@google.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
+                <p class="copyright-note">
+                    <!--
+                    Copyright (c) 2025 Bhus Zibah
+                    All rights reserved.
+                    View only. Do not copy, modify, or distribute without permission.
+                    Contact: [bhuszibah@gmail.com]
+                    -->
+                </p>
+            </div>
         </footer>
         <div id="toast"></div>
     </body>

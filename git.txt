@@ -1,292 +1,268 @@
-After creating contact.html
-git add contact.html
-git commit -m "Add contact page with form"
-git push
+Here's the complete step-by-step Git workflow from scratch:
 
-#################################
-Git Cheat Sheet 🚀
-📁 Basic Setup
+📦 PHASE 1: SETUP (First time only)
+Step 1: Install Git
 bash
-# Initialize a new repo
-git init
+# Check if Git is installed
+git --version
 
-# Clone an existing repo
-git clone <repo-url>
-
-# Check current status
-git status
-
-# Show remote repositories
-git remote -v
-
-# Add remote origin
-git remote add origin <repo-url>
-📤 Staging & Committing
+# If not installed, download from:
+# https://git-scm.com/downloads
+Step 2: Configure Git (First time setup)
 bash
-# Stage specific file
-git add <filename>
-
-# Stage all files
-git add .
-
-# Stage with patch (choose changes)
-git add -p
-
-# Commit with message
-git commit -m "Your message"
-
-# Stage and commit in one line
-git commit -am "Your message"
-
-# Edit last commit (add changes to previous commit)
-git commit --amend -m "New message"
-
-# Unstage file (keep changes)
-git reset <filename>
-
-# Unstage all files
-git reset
-📚 Branch Management
-bash
-# List all branches
-git branch
-
-# Create new branch
-git branch <branch-name>
-
-# Switch to branch
-git checkout <branch-name>
-
-# Create and switch to new branch
-git checkout -b <branch-name>
-
-# Delete branch (local)
-git branch -d <branch-name>
-
-# Delete branch (force)
-git branch -D <branch-name>
-
-# Rename current branch
-git branch -m <new-name>
-
-# List remote branches
-git branch -r
-🔄 Merging & Rebasing
-bash
-# Merge branch into current
-git merge <branch-name>
-
-# Rebase current branch onto another
-git rebase <branch-name>
-
-# Interactive rebase (last 3 commits)
-git rebase -i HEAD~3
-
-# Abort a rebase
-git rebase --abort
-
-# Continue after resolving conflicts
-git rebase --continue
-
-# Merge with fast-forward only
-git merge --ff-only <branch-name>
-📥 Pull & Push
-bash
-# Pull latest changes
-git pull origin <branch-name>
-
-# Pull with rebase instead of merge
-git pull --rebase origin <branch-name>
-
-# Push to remote
-git push origin <branch-name>
-
-# Force push (use with caution!)
-git push -f origin <branch-name>
-
-# Push and set upstream
-git push -u origin <branch-name>
-
-# Push all tags
-git push --tags
-⏱️ Time Travel & History
-bash
-# View commit history
-git log
-
-# One-line commit history
-git log --oneline
-
-# Show changes in commits
-git log -p
-
-# Show specific file history
-git log <filename>
-
-# Reset to previous commit (keep changes)
-git reset --soft HEAD~1
-
-# Reset to previous commit (discard changes)
-git reset --hard HEAD~1
-
-# Reset to specific commit
-git reset --hard <commit-hash>
-
-# Revert a commit (creates new undo commit)
-git revert <commit-hash>
-🗑️ Cleaning Up
-bash
-# Remove untracked files
-git clean -n  # dry run
-git clean -f  # force remove
-
-# Remove untracked files and directories
-git clean -fd
-
-# Prune remote branches
-git fetch --prune
-🔍 Finding Things
-bash
-# Search commits by message
-git log --grep="search term"
-
-# Find which commit introduced a bug
-git bisect start
-git bisect bad
-git bisect good <commit-hash>
-
-# Search code in all commits
-git grep "search term" $(git rev-list --all)
-
-# Show who changed a file
-git blame <filename>
-🏷️ Tags
-bash
-# Create tag
-git tag <tag-name>
-
-# Create annotated tag
-git tag -a <tag-name> -m "Tag message"
-
-# List tags
-git tag
-
-# Delete tag
-git tag -d <tag-name>
-
-# Delete remote tag
-git push origin --delete <tag-name>
-📦 Stashing
-bash
-# Stash changes
-git stash
-
-# Stash with message
-git stash save "message"
-
-# List stashes
-git stash list
-
-# Apply last stash
-git stash apply
-
-# Apply specific stash
-git stash apply stash@{n}
-
-# Pop stash (apply and remove)
-git stash pop
-
-# Drop specific stash
-git stash drop stash@{n}
-
-# Clear all stashes
-git stash clear
-🛠️ Configuration
-bash
-# Set global username
+# Set your name (use your actual name)
 git config --global user.name "Your Name"
 
-# Set global email
-git config --global user.email "your@email.com"
+# Set your email (use your GitHub email)
+git config --global user.email "your.email@example.com"
 
-# Set default branch name
+# Set default branch name to 'main'
 git config --global init.defaultBranch main
 
-# Set default editor
-git config --global core.editor "code --wait"
-
-# List all configs
+# Set your preferred text editor (optional)
+git config --global core.editor "code --wait"  # VS Code
+# OR
+git config --global core.editor "nano"         # Nano
+Step 3: Check your configuration
+bash
 git config --list
-
-# Set aliases
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.st status
-🌊 Netlify-Specific Flow
+🚀 PHASE 2: START A NEW PROJECT (From scratch)
+Step 1: Create project folder and files
 bash
-# Your typical workflow for your site:
+# Create project folder
+mkdir my-project
+cd my-project
+
+# Create your HTML/CSS/JS files
+touch index.html style.css script.js
+# Edit files with your code...
+Step 2: Initialize Git repository
+bash
+# Initialize Git in current folder
+git init
+
+# Check status (files will be untracked - red color)
+git status
+Step 3: Add files to staging area
+bash
+# Add all files
 git add .
-git commit -m "Update website"
-git push origin main
-# Netlify automatically deploys from main branch
-💡 Pro Tips
-bash
-# Visual history graph
-git log --oneline --graph --all
 
-# See what's changed
+# OR add specific files
+git add index.html style.css
+
+# Check status (files will be staged - green color)
+git status
+Step 4: Make your first commit
+bash
+# Commit with message
+git commit -m "Initial commit - created project structure"
+
+# Check commit history
+git log --oneline
+🔄 PHASE 3: DAILY WORKFLOW (Repeat these steps)
+Step 1: Check current status
+bash
+git status
+Step 2: Make changes to your files
+bash
+# Edit your HTML/CSS/JS files
+# Save your changes
+Step 3: Stage your changes
+bash
+# Add all changed files
+git add .
+
+# OR add specific files
+git add index.html
+
+# Check what's staged
+git status
+Step 4: Commit your changes
+bash
+# Commit with descriptive message
+git commit -m "Add contact form and fix styles"
+
+# View commit history
+git log --oneline
+Step 5: Repeat as needed
+bash
+# Work → Add → Commit → Work → Add → Commit
+# This is your local workflow
+🌐 PHASE 4: CONNECT TO GITHUB (First time for project)
+Step 1: Create repository on GitHub
+Go to github.com
+
+Click "New repository"
+
+Name it (e.g., teni-scribes)
+
+DO NOT initialize with README (leave empty)
+
+Click "Create repository"
+
+Step 2: Connect local repo to GitHub
+bash
+# Copy the commands GitHub shows you, or use:
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+
+# Verify remote was added
+git remote -v
+Step 3: Push to GitHub
+bash
+# Push your code to GitHub
+git push -u origin main
+
+# After first time, just use:
+git push
+🌀 PHASE 5: ADVANCED WORKFLOW (Branches)
+Step 1: Create a new branch
+bash
+# Create AND switch to new branch
+git checkout -b feature/contact-form
+
+# Check current branch
+git branch
+Step 2: Work on the branch
+bash
+# Make changes to files
+git add .
+git commit -m "Add contact form validation"
+Step 3: Switch back to main
+bash
+git checkout main
+
+# Pull latest changes (if collaborating)
+git pull origin main
+Step 4: Merge branch
+bash
+# Merge feature branch into main
+git merge feature/contact-form
+
+# Delete the branch (optional)
+git branch -d feature/contact-form
+Step 5: Push merged changes
+bash
+git push origin main
+📤 PHASE 6: PUSHING TO NETLIFY (Your specific case)
+Step 1: Make your changes
+bash
+# Edit your website files
+# Test locally
+Step 2: Stage and commit
+bash
+git add .
+git commit -m "Fix Netlify forms and add redirects"
+Step 3: Push to GitHub
+bash
+git push origin main
+
+# If first push fails:
+git push -u origin main
+Step 4: Check Netlify
+Go to your Netlify dashboard
+
+Wait for auto-deploy (1-2 minutes)
+
+Check deployment logs
+
+Test your forms
+
+🛠️ PHASE 7: TROUBLESHOOTING COMMANDS
+Undo mistakes:
+bash
+# Undo last commit (keep changes)
+git reset --soft HEAD~1
+
+# Undo last commit (discard changes)
+git reset --hard HEAD~1
+
+# Unstage a file
+git reset HEAD filename.html
+
+# Discard changes in a file
+git checkout -- filename.html
+
+# View what you're about to discard
+git status
+Check differences:
+bash
+# See unstaged changes
 git diff
 
 # See staged changes
 git diff --staged
 
-# See changes between branches
-git diff <branch1>..<branch2>
-
-# Undo last commit but keep changes staged
-git reset --soft HEAD~1
-
-# Undo last commit and unstage changes
-git reset HEAD~1
-
-# Fix commit author on last commit
-git commit --amend --author="Name <email>"
-🎯 Quick Reference Card
-text
-# Day-to-day workflow:
-git status          # Check changes
-git add .          # Stage files
-git commit -m "msg" # Commit
-git push           # Push to remote
-
-# Branch workflow:
-git checkout -b feature  # Create feature branch
-# Make changes...
-git add .
-git commit -m "Add feature"
-git checkout main        # Switch back
-git merge feature       # Merge feature
-
-# Oops, I messed up:
-git stash              # Save work temporarily
-git checkout -- .      # Discard local changes
-git reset --hard HEAD  # Reset to last commit
-🚨 Emergency Commands
+# See changes between commits
+git diff HEAD~1 HEAD
+View history:
 bash
-# Recover deleted branch
-git reflog
-git checkout -b <branch-name> <hash-from-reflog>
+# One-line summary
+git log --oneline
 
-# Undo last commit (public)
-git revert HEAD
+# With graph
+git log --graph --oneline --all
 
-# Undo multiple commits
-git revert HEAD~3..HEAD
+# See who changed what
+git blame index.html
+📋 CHEAT SHEET FOR YOUR DAILY USE:
+bash
+# 🔄 DAILY ROUTINE:
+git status                     # Check what changed
+git add .                      # Stage all changes
+git commit -m "Description"    # Commit changes
+git push origin main           # Push to GitHub
 
-# Delete local branches already merged
-git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
-Save this cheat sheet as git-cheatsheet.md in your project!
+# 📁 STARTING NEW FEATURE:
+git checkout -b feature/name   # Create branch
+# Make changes...
+git add .                      # Stage
+git commit -m "Feature done"   # Commit
+git checkout main              # Switch back
+git merge feature/name         # Merge
+git branch -d feature/name     # Clean up
 
-Want me to create a visual flowchart of your Git workflow or explain any specific commands in more detail?
+# ⚠️ FIX MISTAKES:
+git checkout -- file.html      # Discard changes
+git reset HEAD file.html       # Unstage file
+git reset --soft HEAD~1        # Undo last commit (keep changes)
+🎯 YOUR SPECIFIC COMMANDS FOR TENI SCRIBES:
+bash
+# Navigate to your project folder
+cd teni-scribes
+
+# Check what you've changed
+git status
+
+# Add all files
+git add .
+
+# Commit with message
+git commit -m "Fix Netlify form redirects to thank-you page"
+
+# Push to GitHub (Netlify will auto-deploy)
+git push origin main
+⚡ Quick Reference Card:
+text
+START PROJECT:
+mkdir project → cd project → git init → git add . → git commit -m "msg"
+
+DAILY WORK:
+git status → git add . → git commit -m "msg" → git push
+
+BRANCHES:
+git checkout -b feature → work → git add/commit → git checkout main → git merge feature
+
+SYNC WITH GITHUB:
+git remote add origin URL → git push -u origin main
+🚨 Important Notes:
+Always check git status before doing anything
+
+Commit messages should be clear and descriptive
+
+Push regularly to avoid losing work
+
+Test locally before pushing to production
+
+That's it! Start with Phase 2 for your daily work. The setup (Phase 1) is one-time only.
 
