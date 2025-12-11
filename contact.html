@@ -59,7 +59,7 @@
                 <h2>Book a Test Appointment</h2>
                 <form id="bookingForm" action="https://formspree.io/f/xldqpzdw" method="POST">
                     <input type="hidden" name="_subject" value="New Test Booking Request - FKQ Medicals">
-                    <input type="hidden" name="_replyto" value="%email%">
+                    <input type="hidden" name="_replyto" value="email">
                     
                     <div class="form-row">
                         <div class="form-group">
@@ -77,8 +77,7 @@
                     
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" class="fs-input" id="email" name="email" required placeholder="enter your email"/>
-                        <div class="error-message">Please enter a valid email address</div>
+                        <input type="email" id="email" name="email" required placeholder="enter your email"/>                        <div class="error-message">Please enter a valid email address</div>
                     </div>
                     
                     <div class="form-row">
