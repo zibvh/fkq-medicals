@@ -186,9 +186,98 @@
             </div>
         </section>
 
+        <!-- Enhanced Footer -->
         <footer>
-            <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="footer-logo">FKQ <span>Medicals</span></div>
+                    <div class="footer-about">
+                        <p>Your trusted partner in medical diagnostics and healthcare services. We provide accurate, timely, and compassionate care for all your medical needs.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, End of Lion junction, Ogbomoso</p>
+                        <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
+                        <p><i class="fas fa-envelope"></i> info@fkqmedicals.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <div class="footer-services">
+                        <ul>
+                            <li><a href="#">Blood Tests</a></li>
+                            <li><a href="#">Urine Analysis</a></li>
+                            <li><a href="#">X-Ray Services</a></li>
+                            <li><a href="#">Vaccinations</a></li>
+                            <li><a href="#">COVID-19 Testing</a></li>
+                            <li><a href="#">Full Body Checkup</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="footer-social">
+                        <p>Follow us on social media for updates and health tips</p>
+                        <div class="social-icons-footer">
+                            <a href="#" class="social-icon-footer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon-footer"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon-footer"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/2349014168870" class="social-icon-footer"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        &copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
         </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
         <div id="toast"></div>
+
+        <script>
+            // Back to Top functionality
+            const backToTop = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
     </body>
 </html>
