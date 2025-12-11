@@ -57,34 +57,28 @@
             <!-- Booking Form -->
             <div class="contact-form-container">
                 <h2>Book a Test Appointment</h2>
-                <form id="bookingForm" action="https://formspree.io/f/xldqpzdw" method="POST">
-                    <input type="hidden" name="_subject" value="New Test Booking Request - FKQ Medicals">
-                    <input type="hidden" name="_replyto" value="email">
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                            <div class="error-message">Please enter your full name</div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                            <div class="error-message">Please enter a valid phone number</div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="enter your email"/>                        <div class="error-message">Please enter a valid email address</div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="test">Test Type</label>
-                            <select id="test" name="test" required>
-                                <option value="" disabled selected>Select a test</option>
+                <form
+  action="https://formspree.io/f/xldqpzdw"
+  class="fs-form fs-layout__2-column"
+  target="_top"
+  method="POST"
+>
+<div class="fs-field">
+  <label class="fs-label" for="name">Name</label>
+  <input class="fs-input" id="name" name="name" required />
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="email">Email</label>
+  <input type="email" class="fs-input" id="email" name="email" required />
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="phone-number">Phone Number</label>
+  <input type="number" class="fs-input" id="phone-number" name="phone-number" />
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="Test">Test</label>
+  <select class="fs-select" id="test" name="test" required>
+    <option value="" disabled selected>Select a test</option>
                                 <option value="blood-test">Blood Test</option>
                                 <option value="urine-test">Urine Test</option>
                                 <option value="hepatitis-b-test">Hepatitis B Test</option>
@@ -94,28 +88,53 @@
                                 <option value="full-body-checkup">Full Body Checkup</option>
                                 <option value="covid-test">COVID-19 Test</option>
                                 <option value="other">Other Test</option>
-                            </select>
-                            <div class="error-message">Please select a test type</div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="date">Preferred Date</label>
-                            <input type="date" id="date" name="date" required>
-                            <div class="error-message">Please select a date</div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message" class="optional">Additional Information</label>
-                        <textarea id="message" name="message" placeholder="Any special requirements, questions, or additional information..."></textarea>
-                    </div>
-                    
-                    <div class="submit-btn-container">
-                        <button type="submit" class="submit-btn">
-                            <i class="fas fa-calendar-check"></i> Book Appointment
-                        </button>
-                    </div>
-                </form>
+  </select>
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="Date">Date</label>
+  <input type="date" class="fs-input" id="date" name="date" required />
+</div>
+<div class="fs-field">
+    <label class="fs-label" for="Time">Time</label>
+    <input type="time" class="fs-input" id="time" name="time" required />
+  </div>
+  <div class="fs-field col-span-full">
+    <label class="fs-label" for="message">Your Message</label>
+    <textarea
+      class="fs-textarea"
+      id="message"
+      name="message"
+      required
+    ></textarea>
+  </div>
+  <div class="fs-checkbox-field col-span-full">
+    <div class="fs-checkbox-wrapper">
+      <input
+        aria-describedby="dpa-consent-description"
+        class="fs-checkbox"
+        id="dpa-consent"
+        name="dpa-consent"
+        required
+        type="checkbox"
+        value="consent"
+      />
+    </div>
+    <div>
+      <label class="fs-label" for="dpa-consent">
+        Declaration of consent for data processing
+      </label>
+      <p class="fs-description" id="dpa-consent-description">
+        You agree that your data from the form will be collected and processed
+        to answer your request. You can revoke your consent at any time for the
+        future by e-mail to fkqmedicals@gmail.com. We typically Reply in 2 - 3 Business days
+      </p>
+    </div>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Submit</button>
+  </div>
+</form>
+
             </div>
             
             <!-- WhatsApp Contact -->
