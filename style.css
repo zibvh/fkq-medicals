@@ -191,6 +191,7 @@ header {
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius);
     padding: 2rem;
+    gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
@@ -199,6 +200,8 @@ header {
 
 .stat {
     text-align: center;
+    padding: 5px 8px 5px 5px;
+    border-right: 2.5px groove black;
 }
 
 .stat h3 {
@@ -1918,13 +1921,16 @@ footer {
     border-left: 4px solid #ffd700;
     margin-top: 2rem !important;
     text-align: left;
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
 }
 
 .address strong {
     display: block;
     margin-bottom: 0.8rem;
+    border-bottom: 2px rgb(12, 12, 12) groove;
     font-size: 1.3rem;
+
 }
 
 /* Contact Form Styling */
