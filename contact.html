@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact - FKQ Medicals</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body class="contact-page">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    FKQ <span>Medicals</span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-flask"></i> Services</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a class="active" href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="contact.html" class="nav-btn">Book Now</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <section class="content">
+            <h1>Contact Us</h1>
+            
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone Support</h3>
+                    <p>Call us for appointments, inquiries, or emergencies</p>
+                    <p style="font-size: 1.3rem; font-weight: bold; color: #004aad; margin-top: 1rem;">
+                        +234 806 867 1825
+                    </p>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Send us an email for non-urgent inquiries or documentation</p>
+                    <p style="font-size: 1.1rem; color: #004aad; margin-top: 1rem;">
+                        fkqmedicals@gmail.com
+                    </p>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-clock"></i>
+                    <h3>Working Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                    <p>Saturday: 9:00 AM - 5:00 PM</p>
+                    <p>Sunday: 10:00 AM - 3:00 PM</p>
+                </div>
+            </div>
+            
+            <!-- Booking Form -->
+            <div class="contact-form-container">
+                <h2>Book an Appointment</h2>
+                <form
+  action="https://formspree.io/f/mgvgdryd"
+  class="fs-form fs-layout__2-column"
+  target="_top"
+  method="POST"
+>
+<div class="fs-field">
+  <label class="fs-label" for="name">Name</label>
+  <input class="fs-input" id="name" name="name" required />
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="email">Email</label>
+  <input type="email" class="fs-input" id="email" name="email" required />
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="phone-number">Phone Number</label>
+  <input type="number" class="fs-input" id="phone-number" name="phone-number" />
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="Test">Test</label>
+  <select class="fs-select" id="test" name="test" required>
+    <option value="" disabled selected>Select a test</option>
+                                <option value="blood-test">Blood Test</option>
+                                <option value="urine-test">Urine Test</option>
+                                <option value="hepatitis-b-test">Hepatitis B Test</option>
+                                <option value="vaccination">Vaccination</option>
+                                <option value="kidney-function-test">Kidney Function Test</option>
+                                <option value="x-ray">X-Ray</option>
+                                <option value="full-body-checkup">Full Body Checkup</option>
+                                <option value="covid-test">COVID-19 Test</option>
+                                <option value="other">Other Test</option>
+  </select>
+</div>
+<div class="fs-field">
+  <label class="fs-label" for="Date">Date</label>
+  <input type="date" class="fs-input" id="date" name="date" required />
+</div>
+<div class="fs-field">
+    <label class="fs-label" for="Time">Time</label>
+    <input type="time" class="fs-input" id="time" name="time" required />
+  </div>
+  <div class="fs-field col-span-full">
+    <label class="fs-label" for="message">Your Message</label>
+    <textarea
+      class="fs-textarea"
+      id="message"
+      name="message"
+      required
+    ></textarea>
+  </div>
+  <div class="fs-checkbox-field col-span-full">
+    <div class="fs-checkbox-wrapper">
+      <input
+        aria-describedby="dpa-consent-description"
+        class="fs-checkbox"
+        id="dpa-consent"
+        name="dpa-consent"
+        required
+        type="checkbox"
+        value="consent"
+      />
+    </div>
+    <div>
+      <label class="fs-label" for="dpa-consent">
+        Declaration of consent for data processing
+      </label>
+      <p class="fs-description" id="dpa-consent-description">
+        You agree that your data from the form will be collected and processed
+        to answer your request. You can revoke your consent at any time for the
+        future by e-mail to fkqmedicals@gmail.com. We typically Reply in 2 - 3 Business days
+      </p>
+    </div>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Submit</button>
+  </div>
+</form>
+
+            </div>
+            
+            <!-- WhatsApp Contact -->
+            <div class="whatsapp-container">
+                <h3 style="color: #004aad; margin-bottom: 1rem;">Quick Chat on WhatsApp</h3>
+                <p style="color: #666; margin-bottom: 1.5rem;">Get instant responses to your queries</p>
+                <a href="https://wa.me/2349014168870" target="_blank" class="whatsapp-link">
+                    <button class="wa">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </button>
+                </a>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email:</strong> fkqmedicals@gmail.com
+                </p>
+                
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <strong>Phone:</strong> +234 806 867 1825
+                </p>
+                
+                <p class="address">
+                    <strong>Our Location:</strong>
+                    Shop 6, Adjacent Olagbemiro house,<br>
+                    End of Lion junction, Ogbomoso,<br>
+                    Oyo State, Nigeria.
+                </p>
+            </div>
+            
+            <!-- Hours of Operation -->
+            <div class="hours">
+                <h3><i class="fas fa-clock"></i> Working Hours</h3>
+                <p><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</p>
+                <p><strong>Saturday:</strong> 9:00 AM - 5:00 PM</p>
+                <p><strong>Sunday:</strong> 10:00 AM - 3:00 PM</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #ffd700;">
+                    <i class="fas fa-exclamation-circle"></i> Emergency services available 24/7
+                </p>
+            </div>
+            
+            <!-- Map Placeholder -->
+            <div class="map-placeholder">
+                <i class="fas fa-map-marker-alt"></i>
+                <span style="margin-left: 1rem; color: #666; font-size: 1.1rem;">Location Map</span>
+            </div>
+        </section>
+
+        <!-- Enhanced Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="footer-logo">FKQ <span>Medicals</span></div>
+                    <div class="footer-about">
+                        <p>Your trusted partner in medical diagnostics and healthcare services. We provide accurate, timely, and compassionate care for all your medical needs.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, End of Lion junction, Ogbomoso</p>
+                        <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
+                        <p><i class="fas fa-envelope"></i> fkqmedicals@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <div class="footer-services">
+                        <ul>
+                            <li><a href="#">Blood Tests</a></li>
+                            <li><a href="#">Urine Analysis</a></li>
+                            <li><a href="#">X-Ray Services</a></li>
+                            <li><a href="#">Vaccinations</a></li>
+                            <li><a href="#">COVID-19 Testing</a></li>
+                            <li><a href="#">Full Body Checkup</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="footer-social">
+                        <p>Follow us on social media for updates and health tips</p>
+                        <div class="social-icons-footer">
+                            <a href="#" class="social-icon-footer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon-footer"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon-footer"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/2349014168870" class="social-icon-footer"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        &copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+        <div id="toast"></div>
+
+        <script>
+            // Back to Top functionality
+            const backToTop = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+    </body>
+</html>
