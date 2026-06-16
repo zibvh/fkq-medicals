@@ -2,32 +2,39 @@
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
-// Toggle menu open/close
 menuToggle.addEventListener('click', (e) => {
     e.stopPropagation();
     navLinks.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('active'));
 });
 
-// Close menu when clicking a link inside it
 document.querySelectorAll('#navLinks a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
     });
 });
 
-// Simple fade-in effect on scroll
-window.addEventListener('scroll', function() {
-    document.querySelectorAll('.about, .services, .feature, .content').forEach(section => {
-        let pos = section.getBoundingClientRect().top;
-        if (pos < window.innerHeight - 100) {
-            section.style.opacity = '1';
-            section.style.transform = 'translateY(0)';
+document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        navLinks.classList.remove('active');
+    }
+});
+
+// Scroll-triggered fade-in
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
         }
     });
-});
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 // Set minimum date to today for date picker
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', () => {
     const dateInput = document.getElementById('date');
     if (dateInput) {
         const today = new Date().toISOString().split('T')[0];
@@ -35,11 +42,56 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Handle back button behavior
-if (!window.location.pathname.endsWith('index.html') && window.location.pathname !== '/') {
-    history.pushState({}, '', window.location.href);
-    
-    window.addEventListener('popstate', function() {
-        window.location.href = 'index.html';
+// Back to top
+const backToTop = document.getElementById('backToTop');
+if (backToTop) {
+    window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('show', window.pageYOffset > 300);
+    });
+    backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// Toast notification
+function showToast(msg, type = 'info') {
+    const toast = document.getElementById('toast');
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.className = 'show ' + type;
+    setTimeout(() => toast.className = '', 3500);
+}
+
+// Booking form handling
+const bookingForm = document.getElementById('bookingForm');
+if (bookingForm) {
+    bookingForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = bookingForm.querySelector('.submit-btn');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+
+        try {
+            const data = new FormData(bookingForm);
+            const res = await fetch(bookingForm.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (res.ok) {
+                bookingForm.reset();
+                showToast('Appointment request sent. We will reach out shortly.', 'success');
+                btn.textContent = 'Book Appointment';
+            } else {
+                showToast('Something went wrong. Please call us directly.', 'error');
+                btn.textContent = 'Book Appointment';
+            }
+        } catch {
+            showToast('Network error. Please try again or call us.', 'error');
+            btn.textContent = 'Book Appointment';
+        }
+        btn.disabled = false;
     });
 }

@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FKQ Medicals - Precision Diagnostics</title>
+        <title>FKQ Medicals — Precision Diagnostics, Ogbomoso</title>
+        <meta name="description" content="FKQ Medical Diagnostic Hub — trusted diagnostic lab in Ogbomoso. Blood tests, COVID-19 testing, hormonal assays, health screenings and more." />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <script defer src="script.js"></script>
@@ -11,20 +12,25 @@
     <body>
         <header>
             <nav class="navbar">
-                <div class="logo">
-                    <i class="fas fa-stethoscope"></i>
+                <a href="index.html" class="logo">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="12" stroke="#c8a84b" stroke-width="1.5"/>
+                        <rect x="11.5" y="6" width="3" height="14" rx="1.5" fill="#c8a84b"/>
+                        <rect x="6" y="11.5" width="14" height="3" rx="1.5" fill="#c8a84b"/>
+                    </svg>
                     FKQ <span>Medicals</span>
-                </div>
+                </a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="services.html"><i class="fas fa-flask"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
                     <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
                     <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
                     <li><a href="contact.html" class="nav-btn">Book Now</a></li>
                 </ul>
-                <div class="menu-toggle" id="menuToggle">
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
-                </div>
+                </button>
             </nav>
         </header>
 
@@ -34,10 +40,10 @@
             <div class="hero-content">
                 <div class="hero-eyebrow">Ogbomoso's Premier Diagnostic Centre</div>
                 <h1 class="hero-title">Precision Diagnostics,<br><em>Compassionate Care</em></h1>
-                <p class="hero-subtitle">Advanced medical testing with accuracy you can trust. Your health is our highest priority.</p>
+                <p class="hero-subtitle">Advanced medical testing you can trust. Accurate results, fast turnaround, and a team that treats you like family.</p>
                 <div class="hero-buttons">
                     <a href="services.html" class="btn btn-primary">
-                        <i class="fas fa-flask"></i> View Our Services
+                        <i class="fas fa-flask"></i> Our Services
                     </a>
                     <a href="contact.html" class="btn btn-secondary">
                         <i class="fas fa-calendar-check"></i> Book Appointment
@@ -64,79 +70,79 @@
             </div>
         </section>
 
+        <!-- Image + Video strip right below hero -->
+        <div class="hero-media">
+            <div class="hero-media-image">
+                <img src="whychooseus.jpg" alt="FKQ Medicals laboratory" loading="lazy" />
+            </div>
+            <div class="hero-media-video">
+                <iframe
+                    src="https://www.youtube.com/embed/eQkn4MGXGCU?rel=0&modestbranding=1"
+                    title="FKQ Medicals — Our Diagnostic Services"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
         <section class="features">
-            <div class="section-header">
+            <div class="section-header fade-in">
                 <span class="eyebrow">Why Choose Us</span>
                 <h2>Excellence in Every Result</h2>
                 <p>Trusted diagnostic care backed by modern technology and certified professionals</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-microscope"></i></div>
                     <h3>Advanced Technology</h3>
-                    <p>State-of-the-art equipment for precise and reliable test results.</p>
+                    <p>State-of-the-art equipment ensures precise, reliable results every time.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-user-md"></i></div>
                     <h3>Expert Team</h3>
-                    <p>Certified medical professionals with years of diagnostic experience.</p>
+                    <p>Certified medical professionals with years of hands-on diagnostic experience.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
                     <h3>Quick Results</h3>
-                    <p>Fast turnaround times with digital reports available online.</p>
+                    <p>Fast turnaround times, with digital reports available to you promptly.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-home"></i></div>
                     <h3>Home Collection</h3>
-                    <p>Convenient sample collection at your doorstep.</p>
+                    <p>Can't come to us? We'll come to you — sample collection at your doorstep.</p>
                 </div>
             </div>
         </section>
 
         <section class="services-preview">
-            <div class="section-header">
+            <div class="section-header fade-in">
                 <span class="eyebrow">Our Services</span>
                 <h2>Comprehensive Diagnostic Solutions</h2>
                 <p>Over 50 tests available for all your healthcare needs</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tint"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-tint service-icon"></i>
                     <h3>Blood Tests</h3>
                     <p>Complete hematological analysis including CBC, Hb, PCV, and more.</p>
                     <a href="services.html">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-dna"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-dna service-icon"></i>
                     <h3>Hormonal Tests</h3>
                     <p>LH, FSH, Thyroid screening, and comprehensive hormonal assays.</p>
                     <a href="services.html">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-lungs"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-lungs service-icon"></i>
                     <h3>COVID-19 Testing</h3>
-                    <p>RT-PCR, Rapid Antigen tests with official certificates.</p>
+                    <p>RT-PCR and Rapid Antigen tests with official certificates.</p>
                     <a href="services.html">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-procedures"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-procedures service-icon"></i>
                     <h3>Health Screenings</h3>
                     <p>Comprehensive packages for individuals and corporate clients.</p>
                     <a href="services.html">Learn More →</a>
@@ -150,14 +156,14 @@
         </section>
 
         <section class="cta">
-            <div class="cta-content">
+            <div class="cta-content fade-in">
                 <h2>Need Emergency Testing?</h2>
-                <p>We provide 24/7 emergency diagnostic services. Contact us immediately for urgent cases.</p>
+                <p>We provide 24/7 emergency diagnostic services. Contact us immediately for urgent cases — we're always here.</p>
                 <div class="cta-buttons">
                     <a href="tel:+2348068671825" class="btn btn-white">
                         <i class="fas fa-phone"></i> Call Now
                     </a>
-                    <a href="https://wa.me/2349014168870" target="_blank" class="btn btn-whatsapp">
+                    <a href="https://wa.me/2349014168870" target="_blank" rel="noopener" class="btn btn-whatsapp">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
@@ -168,24 +174,26 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-stethoscope"></i>
+                        <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="13" r="12" stroke="#c8a84b" stroke-width="1.5"/>
+                            <rect x="11.5" y="6" width="3" height="14" rx="1.5" fill="#c8a84b"/>
+                            <rect x="6" y="11.5" width="14" height="3" rx="1.5" fill="#c8a84b"/>
+                        </svg>
                         FKQ <span>Medicals</span>
                     </div>
                     <p>Precision diagnostics with compassionate care since 2020.</p>
                     <div class="social-icons">
-                        <!-- <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a> -->
-                        <a href="https://wa.me/2349014168870" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/2349014168870" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -199,23 +207,19 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, End of Lion junction, Ogbomoso</p>
-                    <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
-                    <p><i class="fas fa-envelope"></i> fkqmedicals@gmail.com</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, End of Lion junction, Ogbomoso</p>
+                        <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
+                        <p><i class="fas fa-envelope"></i> fkqmedicals@gmail.com</p>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
-                <p class="copyright-note">
-                    <!--
-                    Copyright (c) 2025 Bhus Zibah
-                    All rights reserved.
-                    View only. Do not copy, modify, or distribute without permission.
-                    Contact: [bhuszibah@gmail.com]
-                    -->
-                </p>
             </div>
         </footer>
+
+        <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
         <div id="toast"></div>
     </body>
 </html>

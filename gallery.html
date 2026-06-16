@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery — FKQ Medicals</title>
+        <meta name="description" content="Photos and videos from FKQ Medical Diagnostic Hub — our facility, team, and services in Ogbomoso." />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="12" stroke="#c8a84b" stroke-width="1.5"/>
+                        <rect x="11.5" y="6" width="3" height="14" rx="1.5" fill="#c8a84b"/>
+                        <rect x="6" y="11.5" width="14" height="3" rx="1.5" fill="#c8a84b"/>
+                    </svg>
+                    FKQ <span>Medicals</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-flask"></i> Services</a></li>
+                    <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="contact.html" class="nav-btn">Book Now</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </header>
+
+        <section class="gallery-hero">
+            <h1>Our Gallery</h1>
+            <p>A look inside FKQ Medicals — our facility, team, and the care we provide every day.</p>
+        </section>
+
+        <div class="gallery-page">
+
+            <!-- PHOTOS SECTION -->
+            <div class="gallery-section fade-in">
+                <h2 class="gallery-section-title">
+                    <i class="fas fa-camera"></i> Facility &amp; Team Photos
+                </h2>
+                <p class="gallery-section-subtitle">A glimpse into our diagnostic centre in Ogbomoso.</p>
+                <div class="gallery-divider"></div>
+
+                <div class="photo-grid">
+                    <div class="photo-item" onclick="openLightbox(this)">
+                        <img src="abouthero.webp" alt="FKQ Medicals facility" loading="lazy" />
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Our diagnostic centre</span>
+                        </div>
+                    </div>
+                    <div class="photo-item" onclick="openLightbox(this)">
+                        <img src="whychooseus.jpg" alt="FKQ Medicals laboratory" loading="lazy" />
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Laboratory at work</span>
+                        </div>
+                    </div>
+                    <div class="photo-item" onclick="openLightbox(this)">
+                        <img src="anotherabouthero.jpg" alt="FKQ Medicals team" loading="lazy" />
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Our care team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEOS SECTION -->
+            <div class="gallery-section fade-in">
+                <h2 class="gallery-section-title">
+                    <i class="fas fa-play-circle"></i> Videos
+                </h2>
+                <p class="gallery-section-subtitle">Watch what we do and how we do it.</p>
+                <div class="gallery-divider"></div>
+
+                <div class="video-grid">
+                    <div class="video-item">
+                        <iframe
+                            src="https://www.youtube.com/embed/eQkn4MGXGCU?rel=0&modestbranding=1"
+                            title="FKQ Medicals — Diagnostic Services Overview"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                        <div class="video-caption">
+                            <strong>Diagnostic Services Overview</strong>
+                            <span>What makes FKQ Medicals different</span>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <iframe
+                            src="https://www.youtube.com/embed/8Qn_spdM5Zg?rel=0&modestbranding=1"
+                            title="Understanding Blood Tests"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                        <div class="video-caption">
+                            <strong>Understanding Blood Tests</strong>
+                            <span>What your results mean for your health</span>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <iframe
+                            src="https://www.youtube.com/embed/oAP5RlPVMV4?rel=0&modestbranding=1"
+                            title="Health Screening Importance"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                        <div class="video-caption">
+                            <strong>Why Regular Screenings Matter</strong>
+                            <span>Prevention is better than cure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+            <div class="lightbox-inner">
+                <img id="lightboxImg" src="" alt="" />
+            </div>
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="13" r="12" stroke="#c8a84b" stroke-width="1.5"/>
+                            <rect x="11.5" y="6" width="3" height="14" rx="1.5" fill="#c8a84b"/>
+                            <rect x="6" y="11.5" width="14" height="3" rx="1.5" fill="#c8a84b"/>
+                        </svg>
+                        FKQ <span>Medicals</span>
+                    </div>
+                    <p>Precision diagnostics with compassionate care since 2020.</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/2349014168870" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Blood Tests</a></li>
+                        <li><a href="services.html">COVID-19 Testing</a></li>
+                        <li><a href="services.html">Health Screenings</a></li>
+                        <li><a href="services.html">Vaccination</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Shop 6, Adjacent Olagbemiro house, End of Lion junction, Ogbomoso</p>
+                        <p><i class="fas fa-phone"></i> +234 806 867 1825</p>
+                        <p><i class="fas fa-envelope"></i> fkqmedicals@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FKQ MEDICAL DIAGNOSTIC HUB LIMITED. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+        <div id="toast"></div>
+
+        <script>
+            function openLightbox(el) {
+                const img = el.querySelector('img');
+                document.getElementById('lightboxImg').src = img.src;
+                document.getElementById('lightboxImg').alt = img.alt;
+                document.getElementById('lightbox').classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox(e) {
+                if (!e || e.target !== document.getElementById('lightbox').querySelector('.lightbox-inner img')) {
+                    document.getElementById('lightbox').classList.remove('open');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeLightbox();
+            });
+        </script>
+    </body>
+</html>
